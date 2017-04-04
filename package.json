@@ -1,0 +1,28 @@
+{
+  "name": "flags-dropdown-vue",
+  "version": "1.0.0",
+  "description": "World Flag Dropdown Vue",
+  "main": "src/FlagsDropdown.vue",
+  "scripts": {
+    "test": "npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sanpwintthu@github.com/beyondplus/flag-dropdown-vue.git"
+  },
+  "keywords": [
+    "World",
+    "Flags",
+    "Dropdown",
+    "VueJs"
+  ],
+  "author": "sanpwintthu@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beyondplus/flag-dropdown-vue/issues"
+  },
+  "bugs": {
+    "url": "https://github.com/beyondplus/flag-dropdown-vue/issues"
+  },
+  "homepage": "https://github.com/beyondplus/flag-dropdown-vue#readme"
+}

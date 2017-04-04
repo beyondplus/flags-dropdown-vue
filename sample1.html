@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/flags.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<div class="col-md-2" id="app"> 
+      <flags-dropdown  v-on:change="optionSelected" :selected="selectedValue"></flags-dropdown>
+  </div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+    
+    <script>
+var app = new Vue({
+    el: '#app',
+    data: {
+      selectedValue : "mm"
+    },
+    methods: {
+    	optionSelected: function (data) {
+            this.selectedValue = data
+      }
+    }
+});
+
+    </script>
+</body>
+</html>
