@@ -13,11 +13,15 @@
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
     
     <script>
+import FlagsDropdown from './src/flags-dropdown-vue'
 var app = new Vue({
     el: '#app',
     data: {
       selectedValue : "mm"
     },
+    components: {
+      'flags-dropdown': FlagsDropdown
+    } , 
     methods: {
     	optionSelected: function (data) {
             this.selectedValue = data
