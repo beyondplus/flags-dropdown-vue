@@ -27,9 +27,8 @@ var app = new Vue({
 
 # Html
 ```html
-<link rel="stylesheet" type="text/css" href="css/flags.min.css">
-<link rel="stylesheet" type="text/css" href="css/custom.css">
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/flags.min.css">
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/custom.css">
 <flags-dropdown  v-on:change="optionSelected" :selected="country_iso"></flags-dropdown>
 ```
 
