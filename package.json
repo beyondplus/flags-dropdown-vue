@@ -1,6 +1,6 @@
 {
   "name": "flags-dropdown-vue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "World Flag Dropdown Vue",
   "main": "src/FlagsDropdown.vue",
   "scripts": {

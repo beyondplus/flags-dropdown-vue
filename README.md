@@ -32,3 +32,10 @@ var app = new Vue({
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
 <flags-dropdown  v-on:change="optionSelected" :selected="country_iso"></flags-dropdown>
 ```
+
+![alt text](https://github.com/beyondplus/flags-dropdown-vue/raw/master/raw/world-flags.png "World Flags Dropdown")
+
+
+## Our Website
+
+[www.beyondplus.biz](http://www.beyondplus.biz)
