@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/flags.min.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/flags.min.css">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/custom.css">
 </head>
 <body>
 	<div class="col-md-2" id="app"> 
@@ -17,14 +17,13 @@ import FlagsDropdown from './src/flags-dropdown-vue'
 var app = new Vue({
     el: '#app',
     data: {
-      selectedValue : "mm"
+      country_iso : "mm"
     },
-    components: {
-      'flags-dropdown': FlagsDropdown
-    } , 
     methods: {
     	optionSelected: function (data) {
-            this.selectedValue = data
+            //console.log(data.id)
+            //console.log(data.phonecode)
+            this.country_iso = data.iso
       }
     }
 });

@@ -1434,15 +1434,14 @@
               "nicename": "Virgin Islands, U.s.",
               "phonecode": 1340
               }
-          ],
-        temp_phone_iso: "mm"
+          ]
       }
     },
     // Methods, we will bind these later on.
     methods: {
       onFlagChange: function (id,phonecode,iso) {
-        this.selected = iso
-        this.$emit('change', iso)
+        var data = { 'id' : id, 'phonecode' : phonecode, 'iso' : iso}
+        this.$emit('change', data)
       },
       toggle: function() {
         this.isOpen = !this.isOpen;
