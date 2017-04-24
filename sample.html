@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/flags.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<div class="col-md-2 lang-dropdown" id="app"> 
+      <div class="flag-box">
+        <span v-bind:class="'flag flag-'+temp_phone_iso"></span> 
+      </div>
+      <div class="lang-dropdown-content">
+        <ul>
+          <li v-for="c in countries" v-on:click="onFlagChange(c.id,c.phonecode,c.iso )">
+            <i v-bind:class="'flag flag-'+c.iso" ></i>
+            <span style="text-transform: uppercase;"  >{{ c.nicename }}</span>
+            <span style="text-transform: uppercase;"   v-on:click="onFlagChange(c.id,c.phonecode,c.iso )">{{ c.iso }}</span>
+            <span>(+{{ c.phonecode }})</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
+    
+    <script>
+var app = new Vue({
+    el: '#app',
+    data: {
+    	countries : [
+              {              
+                "id": 146,
+                "iso": "mm",
+                "nicename": "Myanmar",
+                "phonecode": 95
+              }
+          ],
+          temp_phone_iso: "mm"
+    },
+    methods: {
+    	onFlagChange: function(tempPhoneCounty,tempPhoneCode,tempPhoneIso){
+          this.temp_phone_iso = tempPhoneIso
+     	 },
+
+     	 fetchCountries: function() {
+     	 	//http://localhost/projects/world-flags/json/country.json
+     	 	this.$http.get('https://rawgit.com/beyondplus/flags-dropdown-vue/master/json/country.json').then(response => {
+     	 		this.countries = response.data.countries
+			  }, response => {
+			     alert("Please find the country.json")
+			  });
+     	 }
+    },
+    mounted() {
+    	this.fetchCountries()
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -31,6 +31,8 @@ var app = new Vue({
 <link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/custom.css">
 <flags-dropdown  v-on:change="optionSelected" :selected="country_iso"></flags-dropdown>
 ```
+# Sample in html view
+- sample.html
 
 ![alt text](https://github.com/beyondplus/flags-dropdown-vue/raw/master/raw/world-flags.png "World Flags Dropdown")
 
