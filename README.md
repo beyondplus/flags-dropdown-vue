@@ -1,4 +1,4 @@
-# flag-dropdown-vue
+s# flag-dropdown-vue
 Flag Dropdown Component for Vue2
 
 # Installation
@@ -31,8 +31,8 @@ var app = new Vue({
 <link rel="stylesheet" type="text/css" href="https://rawgit.com/beyondplus/flags-dropdown-vue/master/css/custom.css">
 <flags-dropdown  v-on:change="optionSelected" :selected="country_iso"></flags-dropdown>
 ```
-# Sample in html view
-- sample.html
+# Demo Link
+[Demo](https://rawgit.com/beyondplus/flags-dropdown-vue/master/sample.html)
 
 ![alt text](https://github.com/beyondplus/flags-dropdown-vue/raw/master/raw/world-flags.png "World Flags Dropdown")
 
